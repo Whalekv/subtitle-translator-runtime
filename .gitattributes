@@ -1,0 +1,5 @@
+# 文本统一使用 LF 换行，避免在不同系统下载后改变文件内容。
+* text=auto eol=lf
+# Markdown 行末两个空格用于显式换行，检查时保留这种正常写法。
+*.md whitespace=-blank-at-eol
+*.zip -text

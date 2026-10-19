@@ -1,0 +1,30 @@
+{
+  "script_version": "0.2.0",
+  "verified_on": "2026-10-18",
+  "yt_dlp": {
+    "version": "2026.08.19",
+    "windows": {"url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.08.19/yt-dlp.exe", "size": 17840399, "sha256": "66674953fe251b89f4d08c5f0e35e0728679bd67ab3d7d05c0562af101dd3e7a", "filename": "yt-dlp.exe"},
+    "portable": {"url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.08.19/yt-dlp", "size": 3072469, "sha256": "1fa6733c37ea6fb51c99ad8fe785e7b7e5f3246c9b980230329d4fb72ed8d4d6", "filename": "yt-dlp"}
+  },
+  "whisper": {
+    "version": "1.8.3",
+    "windows": {"url": "https://github.com/ggml-org/whisper.cpp/releases/download/v1.8.3/whisper-bin-x64.zip", "size": 3968674, "sha256": "d824b1e37599f882b396e73f1ee0bfd5d0529f700314c48311dcbd00b803321d", "filename": "whisper-bin-x64.zip"}
+  },
+  "ffmpeg": {
+    "version": "N-127617-g94cba3150c",
+    "windows": {"url": "https://github.com/yt-dlp/FFmpeg-Builds/releases/download/autobuild-2026-10-17-20-33/ffmpeg-N-127617-g94cba3150c-win64-gpl.zip", "size": 200391563, "sha256": "19852763398ad0a56f9c763c96e0cb7706bec68994b33c77786451b9cc5cee98", "filename": "ffmpeg-N-127617-g94cba3150c-win64-gpl.zip"}
+  },
+  "model_revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+  "models": [
+    {"id":"base","label":"基础版（多语言）","filename":"ggml-base.bin","size":147951465,"sha256":"60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe"},
+    {"id":"small","label":"小型版（多语言）","filename":"ggml-small.bin","size":487601967,"sha256":"1be3a9b2063867b937e64e2ec7483364a79917e157fa98c5d94b5c1fffea987b"},
+    {"id":"medium","label":"中型版（多语言）","filename":"ggml-medium.bin","size":1533763059,"sha256":"6c14d5adee5f86394037b4e4e8b59f1673b6cee10e3cf0b11bbdbee79c156208"},
+    {"id":"large","label":"大型版 large-v3（多语言）","filename":"ggml-large-v3.bin","size":3095033483,"sha256":"64d182b440b98d5203c4f9bd541544d84c605196c4f7b845dfa11fb23594d1e2"}
+  ],
+  "sources": [
+    "https://api.github.com/repos/yt-dlp/yt-dlp/releases/tags/2026.08.19",
+    "https://api.github.com/repos/ggml-org/whisper.cpp/releases/tags/v1.8.3",
+    "https://api.github.com/repos/yt-dlp/FFmpeg-Builds/releases/tags/autobuild-2026-10-17-20-33",
+    "https://huggingface.co/api/models/ggerganov/whisper.cpp?blobs=true"
+  ]
+}

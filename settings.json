@@ -1,0 +1,25 @@
+{
+  "_说明": "这些是体验建议，不是最低硬件保证；修改后重新运行命令即生效。阅读速度和句子长度只提示复核，不截字、不删信息、不自动改时间。",
+  "download_timeout_seconds": 60,
+  "download_retries": 3,
+  "reserve_disk_bytes": 536870912,
+  "chunk_size": 40,
+  "context_cues": 2,
+  "merge_max_gap_seconds": 1.2,
+  "_合并说明": "merge_max_gap_seconds 是允许合并的最大相邻空隙，单位秒；调大可合并较远片段，也更容易跨过停顿。同一说话者和语义连续仍须由会话确认。",
+  "sentence_segmentation": {
+    "_说明": "max_chars 是一条字幕的总字符数参考值，中文默认 44，可排成同时出现的两行；max_seconds 是整条持续时间的秒数参考值。调大更倾向保留长句，调小会提示更多长句复核，均不会机械切分。short_chars/short_seconds 调大，会提示更多过碎字幕；完整短回答可以保留。",
+    "max_chars": {"zh": 44, "ja": 44, "ko": 52, "default": 84},
+    "max_seconds": 8.0,
+    "short_chars": {"zh": 6, "ja": 6, "ko": 8, "default": 12},
+    "short_seconds": 1.0
+  },
+  "reading_chars_per_second": {"zh": 9, "ja": 10, "ko": 12, "default": 22},
+  "recommendations": {
+    "_说明": "使用CPU版时，内存不足或核心数未知优先base；small建议至少8GB及4核，medium至少16GB及8核，large只供主动选择。",
+    "small_ram_gib": 8,
+    "small_cpu_cores": 4,
+    "medium_ram_gib": 16,
+    "medium_cpu_cores": 8
+  }
+}

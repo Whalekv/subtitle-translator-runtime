@@ -1,0 +1,17 @@
+# 这些文件是本地运行或验证时生成的，不上传用户配置、字幕、缓存和模型。
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.test-work/
+.test-live/
+dist/
+tools/
+models/
+cache/
+jobs/
+outputs/
+.env
+.env.*
+*.part
+*.log
